@@ -4,7 +4,7 @@
     <string name="inicio_sesion_edt_usuario_hint">Usuario</string>
     <string name="inicio_sesion_edt_password_hint">Contraseña</string>
     <string name="inicio_sesion_btn_iniciar_sesion_texto">Iniciar Sesion</string>
-    <string name="title_activity_inicio_sesion">InicioSesion</string>
+    <string name="title_activity_inicio_sesion">Inicio de sesión</string>
     <string name="administrador_capturista_agregar_usuriario_hint">Usuario</string>
     <string name="administrador_capturista_agregar_nombre_hint">Nombre</string>
     <string name="administrador_capturista_agregar_AParteno_hint">Apellido Paterno</string>
@@ -98,7 +98,7 @@
     <string name="capturista_tienda_agregar_longitud">Longitud:</string>
     <string name="capturista_tienda_agregar_latitud">Latitud:</string>
 
-    <string name="title_activity_mapa">Map</string>
+    <string name="title_activity_mapa">Mapa</string>
     <string name="word_Hola">¡Hola!</string>
     <string name="word_Administrador">ADMINISTRADOR</string>
     <string name="word_infoPersonal">Información Personal</string>
