@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context="layout.administrador_cuenta_editar_informacion">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/administrador_cuenta_editar_informacion_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/administrador_cuenta_editar_informacion_nombre_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/administrador_cuenta_editar_informacion_nombre_hint"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/administrador_cuenta_editar_informacion_apellido_paterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/administrador_cuenta_editar_informacion_apellido_paterno_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/administrador_cuenta_editar_informacion_apellido_paterno_hint"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/administrador_cuenta_editar_informacion_apellido_materno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/administrador_cuenta_editar_informacion_apellido_materno_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/administrador_cuenta_editar_informacion_apellido_materno_hint"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/administrador_cuenta_editar_informacion_correo_electronico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/administrador_cuenta_editar_informacion_correo_electronico_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/administrador_cuenta_editar_informacion_correo_electronico_hint"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/administrador_cuenta_editar_informacion_numero_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/administrador_cuenta_editar_informacion_numero_telefono_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/administrador_cuenta_editar_informacion_numero_telefono_hint"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/administrador_cuenta_editar_informacion_guardar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_gravity="center"
+        android:text="@string/administrador_cuenta_editar_informacion_guardar_hint"/>
+    <Button
+        android:id="@+id/administrador_cuenta_editar_informacion_cancelar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_gravity="center"
+        android:text="@string/administrador_cuenta_editar_informacion_cancelar_hint"/>
+
+</LinearLayout>

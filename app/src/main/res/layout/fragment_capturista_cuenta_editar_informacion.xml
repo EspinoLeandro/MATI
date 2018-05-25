@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context="layout.capturista_cuenta_editar_informacion">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/capturista_cuenta_editar_informacion_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/capturista_cuenta_editar_informacion_nombre_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/capturista_cuenta_editar_informacion_nombre_hint"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/capturista_cuenta_editar_informacion_apellido_paterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/capturista_cuenta_editar_informacion_apellido_paterno_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/capturista_cuenta_editar_informacion_apellido_paterno_hint"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/capturista_cuenta_editar_informacion_apellido_materno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/capturista_cuenta_editar_informacion_apellido_materno_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/capturista_cuenta_editar_informacion_apellido_materno_hint"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/capturista_cuenta_editar_informacion_correo_electronico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/capturista_cuenta_editar_informacion_correo_electronico_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/capturista_cuenta_editar_informacion_correo_electronico_hint"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/capturista_cuenta_editar_informacion_numero_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/capturista_cuenta_editar_informacion_numero_telefono_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/capturista_cuenta_editar_informacion_numero_telefono_hint"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/capturista_cuenta_editar_informacion_guardar_cambios_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/capturista_cuenta_editar_informacion_guardar_cambios_hint"/>
+
+    <Button
+        android:id="@+id/capturista_cuenta_cerrar_sesion_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/capturista_cuenta_cerrar_sesion_hint"/>
+
+
+
+</LinearLayout>
