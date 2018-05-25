@@ -31,11 +31,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/margenes_fab"
-        android:src="@drawable/ic_consultas" />
+        android:src="@drawable/ic_search_black_24dp" />
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btn_clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
-        android:layout_margin="@dimen/margenes_fab"/>
+        android:layout_margin="@dimen/margenes_fab"
+        android:src="@drawable/ic_clear_all_black_24dp"/>
 </android.support.design.widget.CoordinatorLayout>
