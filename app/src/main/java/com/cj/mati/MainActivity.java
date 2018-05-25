@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }else if(tipo.equals("CAPTURISTA")){//SI ES CAPTURISTA
                 intent = new Intent(this, capturista.class);
+                intent.putExtra("user", Usuario);
                 startActivity(intent);
             }
         }else if(sesion.equals("off")) {//SI NO EXISTE SESION

@@ -30,7 +30,6 @@ public class Administrador extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-    private Toolbar toolbar;
     private ImageButton mapa;
 
     @Override
