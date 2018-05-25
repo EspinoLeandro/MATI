@@ -49,9 +49,9 @@
     <string name="title_activity_capturista">Capturista</string>
     <string name="capturista_tienda_agregar_nombre_hint">Nombre del negocio</string>
     <string name="capturista_tienda_agregar_direccion_hint">Direccion</string>
-    <string name="capturista_tienda_agregar_telefono_hint">Telefono</string>
-    <string name="capturista_tienda_agregar_email_hint">Correo Electronico</string>
-    <string name="capturista_tienda_agregar_nombre_encargado_hint">Nombre de Encargado</string>
+    <string name="capturista_tienda_agregar_telefono_hint">Telefono:</string>
+    <string name="capturista_tienda_agregar_email_hint">Correo Electronico:</string>
+    <string name="capturista_tienda_agregar_nombre_encargado_hint">Nombre de Encargado:</string>
     <string name="capturista_tienda_agregar_guardar_hint">Guardar</string>
     <string name="capturista_tienda_agregar_cancelar_hint">Cancelar</string>
     <string name="capturista_tienda_agregar_giro_tienda_txt">Giro Tienda</string>
