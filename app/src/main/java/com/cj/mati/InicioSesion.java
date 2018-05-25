@@ -3,6 +3,7 @@ package com.cj.mati;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -25,6 +26,7 @@ import Utilidades.Funciones;
 
 public class InicioSesion extends AppCompatActivity {
 
+    TextInputLayout tilpass, tiluser;
     EditText etpassword, etusuario;
     Button btnMapa, btnLogin;
     String Tipo, Usuario, password;
@@ -66,8 +68,9 @@ public class InicioSesion extends AppCompatActivity {
         etusuario = (EditText) findViewById(R.id.inicio_sesion_edt_usuario);
         btnMapa = (Button) findViewById(R.id.inicio_sesion_btn_vermapa);
         btnLogin = (Button) findViewById(R.id.inicio_sesion_btn_iniciar_sesion);
+        tiluser = (TextInputLayout) findViewById(R.id.text_usuario);
+        tilpass = (TextInputLayout) findViewById(R.id.text_password);
     }
-
 
     void abrirMapa() {
         Intent intent = new Intent(this, Mapa.class);
@@ -82,18 +85,26 @@ public class InicioSesion extends AppCompatActivity {
         valido = false;
         Funciones obj = new Funciones();
         //Validar usuario
-        if (!etusuario.getText().toString().isEmpty() && !etpassword.getText().toString().isEmpty()) {
-            Usuario = etusuario.getText().toString();
-            password = etpassword.getText().toString();
-            if(administradores.contains(Usuario)){
-                Tipo = "ADMINISTRADOR";
-                getPassword(Referencias.ADMINISTRADORES_REFERENCE);
-            }else if(capturistas.contains(Usuario)){
-                Tipo = "CAPTURISTA";
-                getPassword(Referencias.CAPTURISTAS_REFERENCE);
-            }else{
-                Toast.makeText(this, "Usuario y Contraseña invalidos", Toast.LENGTH_SHORT);
+        tiluser.setError("");
+        tilpass.setError("");
+        if (!etusuario.getText().toString().isEmpty()) {
+            if (!etpassword.getText().toString().isEmpty()) {
+                Usuario = etusuario.getText().toString();
+                password = etpassword.getText().toString();
+                if (administradores.contains(Usuario)) {
+                    Tipo = "ADMINISTRADOR";
+                    getPassword(Referencias.ADMINISTRADORES_REFERENCE);
+                } else if (capturistas.contains(Usuario)) {
+                    Tipo = "CAPTURISTA";
+                    getPassword(Referencias.CAPTURISTAS_REFERENCE);
+                } else {
+                    Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                tilpass.setError("Porfavor ingrese su contraseña");
             }
+        }else {
+            tiluser.setError("Porfavor ingrese su nombre de usuario");
         }
     }
 

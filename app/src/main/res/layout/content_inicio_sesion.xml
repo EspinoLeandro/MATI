@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
+    android:weightSum="11"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.cj.mati.InicioSesion"
     tools:showIn="@layout/activity_inicio_sesion"
@@ -35,7 +35,7 @@
         android:id="@+id/text_usuario"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5">
+        android:layout_weight="2">
 
         <EditText
             android:id="@+id/inicio_sesion_edt_usuario"
@@ -49,7 +49,7 @@
         android:id="@+id/text_password"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5">
+        android:layout_weight="2">
 
         <EditText
             android:id="@+id/inicio_sesion_edt_password"
@@ -68,6 +68,4 @@
         android:background="@color/colorAccent"
         android:textColor="@color/colorWhite"
         android:text="@string/inicio_sesion_btn_iniciar_sesion_texto" />
-
-
 </LinearLayout>
