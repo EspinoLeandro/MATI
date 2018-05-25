@@ -32,16 +32,16 @@
                 android:layout_gravity="right"
                 android:src="@drawable/ic_map_white_24dp"
                 android:background="@color/colorPrimary"
-                android:layout_marginLeft="15dp"/>
+                android:layout_marginRight="15dp"/>
 
-            <ImageButton
-                android:id="@+id/btn_addADMIN"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="right"
-                android:src="@drawable/ic_person_add_white_24dp"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="5dp"/>
+            <!--<ImageButton-->
+                <!--android:id="@+id/btn_addADMIN"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:src="@drawable/ic_person_add_white_24dp"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:layout_marginLeft="5dp"/>-->
         </android.support.v7.widget.Toolbar>
 
         <!--android:layout_height="?attr/actionBarSize"-->
