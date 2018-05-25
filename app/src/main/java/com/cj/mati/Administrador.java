@@ -42,7 +42,6 @@ public class Administrador extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
@@ -66,19 +65,14 @@ public class Administrador extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         getMenuInflater().inflate(R.menu.menu_administrador, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         int id = item.getItemId();
         Intent intent;
-
-
-
         switch (id) {
             case R.id.menu_cuenta:
                 intent = new Intent(Administrador.this, Administrador_cuenta.class);
@@ -87,22 +81,19 @@ public class Administrador extends AppCompatActivity {
                 return true;
             case R.id.menu_sesion:
                 SharedPreferences sharedPreferences = getSharedPreferences("Credenciales", MODE_PRIVATE);
-
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.clear();
                 editor.putString("sesion", "off");
                 editor.putString("tipo", "");
                 editor.putString("user", "");
-
                 editor.commit();
-
                 intent= new Intent(Administrador.this, InicioSesion.class);
                 startActivity(intent);
+                finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
 
     public static class PlaceholderFragment extends Fragment {
         private static final String ARG_SECTION_NUMBER = "section_number";

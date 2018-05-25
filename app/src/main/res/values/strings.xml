@@ -31,7 +31,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="cuenta">Cuenta</string>
+    <string name="cuenta">Ver cuenta</string>
     <string name="administrador_cuenta_editar_informacion_hint">Editar Informacion</string>
     <string name="administrador_cuenta_cerrar_sesion_hint">Cerrar Sesion</string>
     <string name="administrador_cuenta_nombre_hint">Nombre (s)</string>
@@ -84,7 +84,7 @@
     <string name="editar">Editar</string>
     <string name="confirmar">Confirmar</string>
     <string name="eliminar">Eliminar</string>
-    <string name="sesion">Cerrar sesion</string>
+    <string name="sesion">Cerrar sesión</string>
     <string name="add_capturista_text_error_empty_nombre">Ingrese Nombre</string>
     <string name="add_capturista_text_error_empty_paterno">Inserte Apellido Paterno</string>
     <string name="add_capturista_text_error_empty_materno">Inserte Apellido Materno</string>
