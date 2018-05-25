@@ -14,6 +14,17 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información de Contacto"/>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/capturista_tienda_agregar_nombre"
                 android:layout_width="match_parent"
@@ -27,66 +38,28 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionEstado"
+                android:id="@+id/capturista_tienda_agregar_nombre_encargado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_estado"
+                    android:id="@+id/capturista_tienda_agregar_nombre_encargado_edt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Estado:"
-                    android:inputType="text" />
-
-                <Spinner
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></Spinner>
+                    android:hint="@string/capturista_tienda_agregar_nombre_encargado_hint"
+                    android:inputType="text"/>
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionMunicipio"
+                android:id="@+id/capturista_tienda_agregar_edadEncargado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_municipio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Municipio:"
-                    android:inputType="text" />
-            </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionColonia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
                 <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_colonia"
+                    android:id="@+id/capturista_tienda_agregar_edad_encargado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Colonia:"
-                    android:inputType="text" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionCalle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_calle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Calle:"
-                    android:inputType="text" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionCP"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_cp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Codigo Postal:"
+                    android:hint="Edad del encargado:"
                     android:inputType="number" />
             </android.support.design.widget.TextInputLayout>
 
@@ -116,31 +89,26 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_nombre_encargado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <View
+                android:background="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"/>
 
-                <EditText
-                    android:id="@+id/capturista_tienda_agregar_nombre_encargado_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/capturista_tienda_agregar_nombre_encargado_hint"
-                    android:inputType="text"/>
-            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección"/>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_edadEncargado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/capturista_tienda_agregar_edad_encargado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Edad del encargado:"
-                    android:inputType="number" />
-            </android.support.design.widget.TextInputLayout>
+            <TextView
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubicación: "/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -156,24 +124,78 @@
                     android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
-
-
                     <TextView
                         android:id="@+id/capturista_tienda_agregar_longitud"
-                        android:text="@string/capturista_tienda_agregar_longitud"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"/>
-
                     <TextView
                         android:id="@+id/capturista_tienda_agregar_latitud"
-                        android:text="@string/capturista_tienda_agregar_latitud"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"/>
-
                 </LinearLayout>
             </LinearLayout>
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado: "/>
+
+            <Spinner
+                android:id="@+id/capturista_tienda_agregar_direccion_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Municipio: "/>
+
+            <Spinner
+                android:id="@+id/capturista_tienda_agregar_direccion_municipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colonia: "/>
+
+            <Spinner
+                android:id="@+id/capturista_tienda_agregar_direccion_colonia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/capturista_tienda_agregar_direccionCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/capturista_tienda_agregar_direccion_cp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Codigo Postal:"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/capturista_tienda_agregar_direccionCalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/capturista_tienda_agregar_direccion_calle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Calle:"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
