@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    android:paddingTop="11dp">
+
+    <TextView
+        android:id="@+id/item_tiendas_nombrenegocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/item_tiendas_nombreencargado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/item_tiendas_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"/>
+    <View
+        android:background="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

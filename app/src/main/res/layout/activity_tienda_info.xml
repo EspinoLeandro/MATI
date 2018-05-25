@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context="com.cj.mati.TiendaInfo">
+
+    <TextView
+        android:id="@+id/ti_txv_nombreNegocio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:text="Nombre Encargado:"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/ti_txv_nombreEncargado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:text="Email:"
+        android:layout_margin="2dp"/>
+    <TextView
+        android:id="@+id/ti_txv_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:text="Telefono:"
+        android:layout_margin="2dp"/>
+    <TextView
+        android:id="@+id/ti_txv_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:text="Dirección:"
+        android:layout_margin="2dp"/>
+    <TextView
+        android:id="@+id/ti_txv_Direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+</LinearLayout>

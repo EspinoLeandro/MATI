@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="qTipo">
+        <item>"Lugar"</item>
+        <item>"Giro"</item>
+    </array>
+    <array name="qGiros">
+    <item>"abarrotes"</item>
+    <item>"zapateria"</item>
+</array>
+</resources>

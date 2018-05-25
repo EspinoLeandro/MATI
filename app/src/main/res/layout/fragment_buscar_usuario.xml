@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context="layout.BuscarUsuario">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/buscar_usuario_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/buscar_usuario_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/buscar_usuario_hint"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/buscar_usuario_btn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar_usuario_btn"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

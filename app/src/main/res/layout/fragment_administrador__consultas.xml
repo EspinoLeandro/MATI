@@ -1,0 +1,41 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Administrador_Consultas">
+
+    <include layout="@layout/fragment_administrador_tienda_recycle" />
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_Filtro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"/>
+        <FrameLayout
+            android:id="@+id/contenedor_tiendas2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margenes_fab"
+        android:src="@drawable/ic_consultas" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/margenes_fab"/>
+</android.support.design.widget.CoordinatorLayout>

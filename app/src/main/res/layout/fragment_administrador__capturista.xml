@@ -1,0 +1,29 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="layout.Administrador_Capturista">
+
+    <FrameLayout
+        android:id="@+id/contenedor_capturistas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/menu_administrador_capturistas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/selector_item_menu_color"
+        app:itemTextColor="@color/selector_item_menu_color"
+        app:menu="@menu/administrador_menu_capturistas">
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</LinearLayout>
