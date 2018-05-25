@@ -46,7 +46,7 @@
     <string name="administrador_cuenta_editar_informacion_numero_telefono_hint">Numero de Telefono</string>
     <string name="administrador_cuenta_editar_informacion_guardar_hint">Guardar Cambios</string>
     <string name="administrador_cuenta_editar_informacion_cancelar_hint">Cancelar</string>
-    <string name="title_activity_capturista">capturista</string>
+    <string name="title_activity_capturista">Capturista</string>
     <string name="capturista_tienda_agregar_nombre_hint">Nombre (s)</string>
     <string name="capturista_tienda_agregar_direccion_hint">Direccion</string>
     <string name="capturista_tienda_agregar_telefono_hint">Telefono</string>

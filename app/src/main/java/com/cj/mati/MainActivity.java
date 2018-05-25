@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
+
+
     private void cargarPreferencias() {
         SharedPreferences preferences = getSharedPreferences("Credenciales", MODE_PRIVATE);
 
