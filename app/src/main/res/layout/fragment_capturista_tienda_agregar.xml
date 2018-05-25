@@ -18,7 +18,6 @@
                 android:id="@+id/capturista_tienda_agregar_nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <EditText
                     android:id="@+id/capturista_tienda_agregar_nombre_edt"
                     android:layout_width="match_parent"
@@ -28,36 +27,24 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionCalle"
+                android:id="@+id/capturista_tienda_agregar_direccionEstado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_calle"
+                    android:id="@+id/capturista_tienda_agregar_direccion_estado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Calle:"
+                    android:hint="Estado:"
                     android:inputType="text" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionColonia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_colonia"
+                <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Colonia:"
-                    android:inputType="text" />
+                    android:layout_height="wrap_content"></Spinner>
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/capturista_tienda_agregar_direccionMunicipio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <EditText
                     android:id="@+id/capturista_tienda_agregar_direccion_municipio"
                     android:layout_width="match_parent"
@@ -67,15 +54,26 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/capturista_tienda_agregar_direccionEstado"
+                android:id="@+id/capturista_tienda_agregar_direccionColonia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <EditText
-                    android:id="@+id/capturista_tienda_agregar_direccion_estado"
+                    android:id="@+id/capturista_tienda_agregar_direccion_colonia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Estado:"
+                    android:hint="Colonia:"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/capturista_tienda_agregar_direccionCalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/capturista_tienda_agregar_direccion_calle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Calle:"
                     android:inputType="text" />
             </android.support.design.widget.TextInputLayout>
 
@@ -83,20 +81,18 @@
                 android:id="@+id/capturista_tienda_agregar_direccionCP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <EditText
                     android:id="@+id/capturista_tienda_agregar_direccion_cp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Codigo Postal:"
-                    android:inputType="text" />
+                    android:inputType="number" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/capturista_tienda_agregar_telefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <EditText
                     android:id="@+id/capturista_tienda_agregar_telefono_edt"
                     android:layout_width="match_parent"
@@ -114,9 +110,11 @@
                     android:id="@+id/capturista_tienda_agregar_email_edt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/capturista_tienda_agregar_email_hint" />
+                    android:hint="@string/capturista_tienda_agregar_email_hint"
+                    android:inputType="textEmailAddress"/>
 
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/capturista_tienda_agregar_nombre_encargado"
                 android:layout_width="match_parent"
@@ -126,7 +124,8 @@
                     android:id="@+id/capturista_tienda_agregar_nombre_encargado_edt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/capturista_tienda_agregar_nombre_encargado_hint" />
+                    android:hint="@string/capturista_tienda_agregar_nombre_encargado_hint"
+                    android:inputType="text"/>
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -139,17 +138,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Edad del encargado:"
-                    android:inputType="text" />
+                    android:inputType="number" />
             </android.support.design.widget.TextInputLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <Button
+                <ImageButton
                     android:id="@+id/capturista_tienda_agregar_ubicacion"
                     android:text="@string/capturista_tienda_agregar_ubicacion"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_place_white_24dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="vertical"
@@ -171,30 +172,24 @@
                         android:layout_marginTop="5dp"/>
 
                 </LinearLayout>
-
-
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="20dp"
-                android:gravity="center">
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/capturista_tienda_agregar_cancelar_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/capturista_tienda_agregar_cancelar_hint"/>
 
                 <Button
                     android:id="@+id/capturista_tienda_agregar_guardar_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:hint="@string/capturista_tienda_agregar_guardar_hint"/>
-
-                <Button
-                    android:id="@+id/capturista_tienda_agregar_cancelar_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/capturista_tienda_agregar_cancelar_hint"/>
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
