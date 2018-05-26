@@ -69,6 +69,16 @@ public class administrador_tienda_recycle extends Fragment implements TiendasAda
                     i--;
                 }
             }
+        }else{
+            String lugar = filtro;
+            Tienda tienda;
+            for (int i = 0; i<tiendasList.size(); i++) {
+                tienda = tiendasList.get(i);
+                if (!tienda.getColonia().equals(lugar)) {
+                    tiendasList.remove(i);
+                    i--;
+                }
+            }
         }
     }
 

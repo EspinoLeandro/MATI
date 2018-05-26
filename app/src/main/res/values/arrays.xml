@@ -6,7 +6,6 @@
     </array>
     <array name="qGiros">
         <item>"abarrotes"</item>
-        <item>"zapateria"</item>
     </array>
 
     <array name="Estados">
@@ -14,16 +13,14 @@
     </array>
     <array name="Municipios">
         <item>"Hidalgo"</item>
-        <item>"Maravatio"</item>
-        <item>"Senguio"</item>
     </array>
     <array name="Colonias1">
+
         <item>"Rincón de Dolores"</item>
         <item>"Centro"</item>
         <item>"La mangana"</item>
         <item>"La morita"</item>
-        <item>"San Lorenzo"</item>
-        <item>"San Pedro"</item>
-        <item>"San Matias"</item>
+        <item>"La fabrica"</item>
+        <item>"El zapotito"</item>
     </array>
 </resources>

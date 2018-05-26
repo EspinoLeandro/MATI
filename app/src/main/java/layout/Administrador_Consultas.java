@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import com.cj.mati.R;
 
+import java.util.ArrayList;
+
 public class Administrador_Consultas extends Fragment {
 
     String filtro = "";
@@ -23,6 +25,8 @@ public class Administrador_Consultas extends Fragment {
     FloatingActionButton btn_query, btn_clear;
     TextView tvFiltro;
     View vista;
+
+
     public Administrador_Consultas() {}
 
     @Override
@@ -65,7 +69,7 @@ public class Administrador_Consultas extends Fragment {
                         //0 = Lugar, 1 = Giro
                         if(which == 0){
                             filtro += "LUGAR";
-                            selectLugar();
+                            selectEstado();
                         }else{
                             filtro += "GIRO";
                             selectGiro();
@@ -76,12 +80,48 @@ public class Administrador_Consultas extends Fragment {
         builder.show();
     }
 
-    private void selectLugar() {
+    private void selectEstado() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Tipo de Busqueda:")
-                .setItems(R.array.qTipo, new DialogInterface.OnClickListener() {
+        builder.setTitle("Seleccione Estado:")
+                .setItems(R.array.Estados, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
+                        selectMunicipio();                    }
+                });
+        builder.create();
+        builder.show();
+    }
 
+    private void selectMunicipio() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Seleccione Municipio:")
+                .setItems(R.array.Municipios, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        selectColonia();                    }
+                });
+        builder.create();
+        builder.show();
+    }
+
+    private void selectColonia() {
+        final ArrayList<String> colonias = new ArrayList<>();
+
+        colonias.add("Rincon de Dolores");
+        colonias.add("Centro");
+        colonias.add("La mangana");
+        colonias.add("La morita");
+        colonias.add("La fabrica");
+        colonias.add("El zapotito");
+
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Seleccione Colonia:")
+                .setItems(R.array.Colonias1, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        filtro = colonias.get(which);
+                        Fragment fragment = new administrador_tienda_recycle();
+                        Bundle b = new Bundle();
+                        b.putString("FILTRO", filtro);
+                        fragment.setArguments(b);
+                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contenedor_tiendas2,fragment).commit();
                     }
                 });
         builder.create();
