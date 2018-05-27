@@ -9,16 +9,10 @@ import android.view.ViewGroup;
 
 import com.cj.mati.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class capturista_tienda extends Fragment {
 
-
     public capturista_tienda() {
-        // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

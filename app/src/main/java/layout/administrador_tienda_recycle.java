@@ -32,6 +32,7 @@ public class administrador_tienda_recycle extends Fragment implements TiendasAda
     private RecyclerView tiendas;
     private List<Tienda> tiendasList = new ArrayList<>();
     private TiendasAdaptador adapter;
+    private String USER;
 
     public administrador_tienda_recycle() {
     }
@@ -47,6 +48,10 @@ public class administrador_tienda_recycle extends Fragment implements TiendasAda
         adapter.setListener(this);
         tiendas.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         tiendas.setAdapter(adapter);
+
+        if(getArguments() != null){
+            USER = getArguments().getString("USER");
+        }
 
         return view;
     }
@@ -125,6 +130,8 @@ public class administrador_tienda_recycle extends Fragment implements TiendasAda
 
     @Override
     public void onClickLongItemTiendas() {
-
+        if(USER.equals("ADMINA")){
+            //Options
+        }
     }
 }

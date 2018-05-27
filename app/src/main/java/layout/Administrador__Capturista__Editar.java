@@ -82,7 +82,6 @@ public class Administrador__Capturista__Editar extends Fragment {
                     clearError(textTelefono);
 
                     String email = correo.getText().toString();
-                    email = email.replace('.', '*');
 
                     Capturista capturista = new Capturista(
                             email,
@@ -94,7 +93,7 @@ public class Administrador__Capturista__Editar extends Fragment {
                             usuario.getText().toString());
 
                     myRef.child(Referencias.CAPTURISTAS_REFERENCE).child(usuario.getText().toString()).setValue(capturista);
-                    Toast.makeText(getContext(), "capturista Editado :)", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Capturista Editado", Toast.LENGTH_SHORT).show();
                     getActivity().onBackPressed();
                 }
             }
@@ -127,35 +126,51 @@ public class Administrador__Capturista__Editar extends Fragment {
     }
 
     private boolean validForm() {
-        boolean valid = true;
+        textNombre.setError("");
+        textPaterno.setError("");
+        textMaterno.setError("");
+        textTelefono.setError("");
+        textCorreo.setError("");
 
-        if (nombre.getText().toString().isEmpty()) {
-            valid = false;
-            textNombre.setError(getString(R.string.add_capturista_text_error_empty_nombre));
+        Boolean valid = true;
+        if(nombre.getText().toString().isEmpty()){
+            textNombre.setError("Ingrese Nombre");
+            valid= false;
         }
-        if (paterno.getText().toString().isEmpty()) {
-            valid = false;
-            textPaterno.setError(getString(R.string.add_capturista_text_error_empty_paterno));
+        if(paterno.getText().toString().isEmpty()){
+            textPaterno.setError("Ingrese Apellido Paterno");
+            valid= false;
         }
-        if (materno.getText().toString().isEmpty()) {
-            valid = false;
-            textMaterno.setError(getString(R.string.add_capturista_text_error_empty_materno));
+        if(materno.getText().toString().isEmpty()){
+            textMaterno.setError("Ingrese Apellido Materno");
+            valid= false;
         }
-        if (telefono.getText().toString().isEmpty()) {
-            valid = false;
-            textTelefono.setError(getString(R.string.add_capturista_text_error_empty_telefono));
-        } else if (!Patterns.PHONE.matcher(telefono.getText().toString()).matches()) {
-            valid = false;
-            textTelefono.setError(getString(R.string.add_capturista_text_error_incorrect_telefono));
+        if(correo.getText().toString().isEmpty()){
+            textCorreo.setError("Ingrese Correo");
+            valid= false;
+        }else if(!Patterns.EMAIL_ADDRESS.matcher(correo.getText().toString()).matches()){
+            textCorreo.setError("Correo invalido");
+            valid= false;
         }
-        if (correo.getText().toString().isEmpty()) {
-            valid = false;
-            textCorreo.setError(getString(R.string.add_capturista_text_error_empty_correo));
-        } else if (!Patterns.EMAIL_ADDRESS.matcher(correo.getText().toString()).matches()) {
-            valid = false;
-            textCorreo.setError(getString(R.string.add_capturista_text_error_incorrect_correo));
+        if (telefono.getText().toString().isEmpty()){
+            textTelefono.setError("Ingrese Numero de Telefono");
+            valid= false;
+        }else if(!Patterns.PHONE.matcher(telefono.getText().toString()).matches()){
+            textTelefono.setError("Telefono invalido");
+            valid= false;
         }
 
+
+        if (valid){
+            capturista = new Capturista(
+                    correo.getText().toString(),
+                    password.getText().toString(),
+                    nombre.getText().toString(),
+                    paterno.getText().toString(),
+                    materno.getText().toString(),
+                    telefono.getText().toString(),
+                    usuario.getText().toString());
+        }
         return valid;
     }
 

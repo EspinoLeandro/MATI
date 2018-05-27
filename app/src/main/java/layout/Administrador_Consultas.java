@@ -34,6 +34,11 @@ public class Administrador_Consultas extends Fragment {
                              Bundle savedInstanceState) {
         vista =  inflater.inflate(R.layout.fragment_administrador__consultas, container, false);
         Fragment fragment = new administrador_tienda_recycle();
+        if(getArguments() != null){
+            Bundle b = new Bundle();
+            b.putString("USER", getArguments().getString("USER"));
+            fragment.setArguments(b);
+        }
         getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contenedor_tiendas2,fragment).commit();
         loadControls();
         tvFiltro.setText("GENERAL");

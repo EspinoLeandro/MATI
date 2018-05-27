@@ -9,24 +9,22 @@ import android.view.ViewGroup;
 
 import com.cj.mati.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class Administrador_Tienda extends Fragment {
 
-
     public Administrador_Tienda() {
-        // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragmentV
         View vista = inflater.inflate(R.layout.fragment_administrador__tienda, container, false);
 
         Fragment fragment = new administrador_tienda_recycle();
+        if(getArguments() != null){
+            Bundle b = new Bundle();
+            b.putString("USER", getArguments().getString("USER") + "A");
+            fragment.setArguments(b);
+        }
         getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contenedor_tiendas,fragment).commit();
 
         return vista;

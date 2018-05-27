@@ -113,6 +113,9 @@ public class capturista extends AppCompatActivity {
             switch (sectionNumber) {
                 case 1:
                     fragment = new Administrador_Consultas();
+                    Bundle b = new Bundle();
+                    b.putString("USER", "CAP");
+                    fragment.setArguments(b);
                     break;
                 case 2:
                     fragment = new capturista_tienda_agregar();

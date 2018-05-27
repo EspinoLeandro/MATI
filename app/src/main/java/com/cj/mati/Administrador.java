@@ -103,9 +103,15 @@ public class Administrador extends AppCompatActivity {
             switch (sectionNumber) {
                 case 1:
                     fragment = new Administrador_Consultas();
+                    Bundle b = new Bundle();
+                    b.putString("USER", "ADMIN");
+                    fragment.setArguments(b);
                     break;
                 case 2:
                     fragment = new Administrador_Tienda();
+                    Bundle b2 = new Bundle();
+                    b2.putString("USER", "ADMIN");
+                    fragment.setArguments(b2);
                     break;
                 case 3:
                     fragment = new Administrador_Capturista();

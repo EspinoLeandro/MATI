@@ -18,6 +18,7 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -276,10 +277,16 @@ public class capturista_tienda_agregar extends Fragment implements LocationListe
         if(Telefono.getText().toString().isEmpty()){
             TITelefono.setError("Ingrese Telefono");
             valid=false;
+        }else if(!Patterns.PHONE.matcher(Telefono.getText().toString()).matches()){
+            TITelefono.setError("Telefono invalido");
+            valid= false;
         }
         if(Email.getText().toString().isEmpty()){
             TIEmail.setError("Ingrese Email");
             valid=false;
+        }else if(!Patterns.EMAIL_ADDRESS.matcher(Email.getText().toString()).matches()){
+            TIEmail.setError("Correo invalido");
+            valid= false;
         }
         if(Encargado.getText().toString().isEmpty()){
             TIEncargado.setError("Ingrese Encargado");
