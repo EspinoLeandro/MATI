@@ -103,4 +103,7 @@
     <string name="word_Administrador">ADMINISTRADOR</string>
     <string name="word_infoPersonal">Información Personal</string>
     <string name="word_infoSesion">Sesión MATI</string>
+    <string name="who">La app MATI fue desarrolla por el equipo de trabajo denominado Calidad Jaguar, integrado por estudiantes de la Ingenieria en Sistemas Computacionales del ITSCH</string>
+    <string name="cjmail">calidadjaguaritsch@gmail.com</string>
+    <string name="socios">MATI esta respaldada por:</string>
 </resources>

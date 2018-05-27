@@ -61,7 +61,8 @@
             android:name=".Mapa"
             android:label="@string/title_activity_mapa" />
         <activity android:name=".TiendaInfo" />
-        <activity android:name=".Administrador_tienda_editar"></activity>
+        <activity android:name=".Administrador_tienda_editar" />
+        <activity android:name=".ActivityAbout"></activity>
     </application>
 
 </manifest>
